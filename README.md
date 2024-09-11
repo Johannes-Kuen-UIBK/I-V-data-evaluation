@@ -10,9 +10,9 @@ How to use:
  
 
 ver: 1.0
-ver. datum: 26.08.24
-last checked: 26.08.2024
+ver. datum: 11.09.24
+last checked: 11.09.2024
 txt.data format from: 01.08.2024
 
 
-UIBK, MTI, Ag Thin Layer, Projekt: FlexPecs 26.08.2024 Johannes Kuen 
+UIBK, MTI, Ag Thin Layer, Projekt: FlexPecs 11.09.2024 Johannes Kuen 
