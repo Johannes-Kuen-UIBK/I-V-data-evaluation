@@ -30,7 +30,7 @@ def update_graph_count():
         txt_dateien = glob.glob(os.path.join(ordner_pfad, '*.txt'))
         deviceArray = []
         for datei in txt_dateien:
-            with open(datei, 'r') as file:
+            with open(datei, 'r', encoding='iso-8859-1') as file:
                 for i, line in enumerate(file):
                     if i == 3:
                         _, device = line.strip().split('\t')
@@ -74,7 +74,7 @@ def show_graph():
         y_values = []
         last_value = None  # Nur der letzte Wert aus Zeile 34
 
-        with open(datei, 'r') as file:
+        with open(datei, 'r', encoding='iso-8859-1') as file:
             for i, line in enumerate(file):
                 if i == 3:
                     _, device = line.strip().split('\t')  # Gerät in Zeile 3
@@ -150,7 +150,7 @@ def save_all_graphs():
         y_values = []
         last_value = None
 
-        with open(datei, 'r') as file:
+        with open(datei, 'r', encoding='iso-8859-1') as file:
             for i, line in enumerate(file):
                 if i == 3:
                     _, device = line.strip().split('\t')
@@ -208,7 +208,21 @@ root = tk.Tk()
 root.title("j/V Graph Plotter")
 
 # Fenstergröße festlegen
-root.geometry("600x400")
+
+# Bildschirmauflösung abrufen
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+# Fenstergröße auf 50% der Bildschirmauflösung setzen
+width = int(screen_width * 0.3)
+height = int(screen_height * 0.4)
+
+# Zentrieren des Fensters auf dem Bildschirm
+x = int((screen_width - width) / 2)
+y = int((screen_height - height) / 2)
+
+# Setze die Größe und Position des Fensters
+root.geometry(f'{width}x{height}+{x}+{y}')
 
 ordner_pfad = ""
 
