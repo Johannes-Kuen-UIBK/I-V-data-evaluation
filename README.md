@@ -6,13 +6,13 @@ How to use:
 - Open j_V Plotter UIBK for HUJI
 - Select the folder with all .txt files from the meassurement from HUJI.
 - The amount of found .txt files is shown in the window. The amount of plotted graphs is calculated and shown in the window.
-- Select "show graph" for producing and showing all graphs. The next graph is shown after the last one in closed.
+- Select "show graph" for producing and showing all graphs. The next graph is shown after the last one is closed.
 - Select "Select save Directory" to select a folder for saving all graphs.
  
 
 ver: 1.0
 ver. datum: 11.09.24
-last checked: 11.09.2024
+last checked: 25.09.2024
 txt.data format from: 01.08.2024
 
 
